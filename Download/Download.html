@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- saved from url=(0014)about:internet -->
+<head>
+    <meta charset="UTF-8">
+    <title>Download_automatic</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+
+</head>
+<body>
+<style>
+h1,h4{
+    text-align: center;
+}
+    a{
+        padding-left:5px ;
+        padding-right: 5px;
+    }
+</style>
+<div class="container">
+    <h1>欢迎来到江苏名通软件安装页面</h1>
+    <hr>
+    <h4>请根据需要下载软件包</h4>
+    <br>
+    <table class="table  table-striped">
+        <thead>
+        <tr>
+            <th>软件包名称</th>
+            <th>包含软件</th>
+            <th>下载</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+            <td>通用软件包</td>
+            <td>Office/浏览器/腾讯通/SVN/驱动/QQ/微信/Winrar/火绒安全/FTP/Chorme</td>
+            <td><a href="#">点击下载</a></td>
+            <td><a data-toggle="modal" data-target="#layer1" >安装必读</a></td>
+        </tr>
+        <tr >
+            <td>Unity</td>
+            <td>Unity5.6/VS2013/Patcher</td>
+            <td><a href="#">点击下载</a></td>
+            <td>请使用管理员权限启动破解</td>
+        </tr>
+        <tr >
+            <td>美术</td>
+            <td>3Dmax/PS/AI</td>
+            <td><a href="#">点击下载</a></td>
+            <td>请使用管理员权限启动破解</td>
+        </tr>
+        <tr >
+            <td>Java技术支持</td>
+            <td>Eclipse/JDK</td>
+            <td><a href="#">点击下载</a></td>
+            <td><a data-toggle="modal" data-target="#layer1"></a></td>
+        </tr>
+        <tr >
+            <td>PHP技术支持</td>
+            <td>Wamp/subline/Navcat/Shell</td>
+            <td><a href="#" >点击下载</a></td>
+            <td><a data-toggle="modal" data-target="#layer1"></a></td>
+        </tr>
+        <tr >
+            <td>运维</td>
+            <td>Vmware</td>
+            <td><a href="#">点击下载</a></td>
+            <td><a data-toggle="modal" data-target="#layer1"></a></td>
+        </tr>
+        <tr>
+            <td>运营</td>
+            <td>网络编辑超级工具箱</td>
+            <td><a href="#">点击下载</a></td>
+            <td><a data-toggle="modal" data-target="#layer1"></a></td>
+        </tr>
+        <tr>
+            <td>大数据</td>
+            <td>企业微信</td>
+            <td><a href="#">点击下载</a></td>
+            <td><a data-toggle="modal" data-target="#layer1"></a></td>
+        </tbody>
+    </table>
+    <table class="table  table-striped">
+        <thead>
+        <tr>
+            <th>可选软件分类</th>
+            <th>选择软件</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr >
+            <td>镜像系统类</td>
+            <td><a href="#">Centos</a> | <a href="#">Ubuntu</a> | <a href="#">Windowserver 2008</a></td>
+        </tr>
+        <tr >
+            <td>设计类</td>
+            <td><a href="#" >AxureRp</a></td>
+        </tr>
+        <tr >
+            <td>驱动类</td>
+            <td><a href="#">驱动人生（万能网卡版）</a> | <a href="#">驱动精灵（万能网卡版）</a></td>
+        </tr>
+        <tr >
+            <td>FTP工具类</td>
+            <td><a href="#">LeadFTP</a> | <a href="#">Putty</a></td>
+        </tr> <tr >
+            <td>Linux交互命令类</td>
+            <td><a href="#">Xshell</a></td>
+        </tr>
+        <tr >
+            <td>阅读编辑类</td>
+            <td><a href="#">pdf阅读器</a> | <a href="#">NotePad</a> | <a href="#">MarkdownPad</a>  </td>
+        </tr>
+        </tbody>
+    </table>
+    <div role="dialog" class="modal" id="layer1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center">安装必读</h4>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>RTX屏幕右下角图标右键点击，选择系统设置，服务器设置，地址：192.168.1.197</li>
+                        <li>SVN与FTP地址请咨询部门负责人</li>
+                        <li>所有软件的破解程序和账号密码都在下载包里</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="jquery-3.2.1.min.js"></script>
+<script src="bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var paraArray = new Array("E:\\software\\setup.exe");
+        $("a[href='#']").click(function(){
+            var index=$(this).index("a[href='#']");
+            $(this).attr({"href":paraArray[index],"download":true});
+        });
+    });
+</script>
+</body>
+</html>

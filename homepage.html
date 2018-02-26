@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>软件安装_江苏名通信息科技有限公司</title>
+</head>
+<body>
+<style>
+    ul li{
+    list-style: none;
+}
+    .banner{
+        height: 180px;
+        background-color: rgb(51,51,51);
+        white-space: nowrap;
+        text-align: center;
+    }
+    .logo{
+        margin-top: 60px;
+        margin-right: 350px;
+    }
+    .software{
+      background-image: url(source/banner.jpg);
+        background-repeat: no-repeat;
+        height: 288px;
+        text-align: center;
+        padding-top: 60px;
+    }
+    .software-text{
+        margin: 0 auto;
+        height: 145px;
+        width: 464px;
+        color: white;
+    }
+    .software-top{
+        height: 83px;
+        border-bottom: dotted white 1px;
+    }
+    h1{
+       font-size: 50px;
+        line-height: 83px;
+        font-weight: lighter;
+        margin: 0;
+    }
+    h2{
+        padding: 0px;
+        margin: 0px;
+        font-weight: lighter;
+        line-height: 62px;
+    }
+    .download{
+        display: block;
+        margin: 0 auto;
+        width: 150px;
+        height: 35px;
+        margin-top: 30px;
+        border: solid white 1px;
+        color: white;
+        line-height:35px;
+    }
+    .download:hover{
+     border-radius: 20px;
+        background-color: rgba(255,255,255,0.2);
+    }
+   .note{
+       height: 280px;
+       overflow: hidden;
+       text-align:center ;
+   }
+   li{
+       padding-top: 40px;
+       padding-left: 10px;
+       vertical-align: top;
+       float: none;
+       padding-right: 10px;
+       border: solid rgb(210,210,210) 1px;
+       display: inline-block;
+       margin-left: 40px;
+       height: 220px;
+       width: 360px;
+   }
+   li:hover{
+       border-radius: 20px;
+       background-color: rgba(210,210,210,0.1);
+   }
+    fieldset{
+        margin: 0px;
+        border-top: solid rgb(210,210,210) 1px ;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+    legend{
+        text-align: center;
+        font-size: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    legend:hover{
+        font-size: 21px;
+    }
+    p{
+        margin: 0;
+        padding: 0;
+        padding-top: 5px;
+    }
+    img{
+        margin: 0 auto;
+        display: inline-block;
+        float: none;
+    }
+</style>
+<header>
+    <div class="banner">
+        <img class="logo" src="source/mingtiongLogo.png" height="70px" width="260px"/>
+        <img src="source/xianjing.png"  height="80px" width="150px"/>
+        <img src="source/rexue.png"  height="80px" width="140px"/>
+        <img src="source/qiji.png"  height="80px" width="140px"/>
+        <img src="source/anhei.png"  height="80px" width="180px"/>
+    </div>
+</header>
+<div class="software">
+    <div class="software-text">
+     <div class="software-top">
+      <h1>软件安装</h1>
+     </div>
+      <h2>Software Setup Version1.0</h2>
+    </div>
+<a class="download">
+        立即下载
+</a>
+</div>
+<div class="note">
+    <ul>
+        <li>
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>软件内容</legend>
+                <p>软件包含通用软件包（office，浏览器，腾讯通，svn,驱动，QQ，微信，火绒，FTP，Winrar）,以及各部门所需可选软件包，下载安装后，可以根据需要选择软件</p>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>安装必读</legend>
+                <p>1.RTX屏幕右下角图标右键点击，选择系统设置，服务器设置，地址：192.168.1.197</p>
+                <p>2.SVN与FTP地址请咨询部门负责人</p>
+                <p>3.所有软件的破解程序和账号密码都在下载包里</p>
+                <p>4.运行破解包时请右键使用管理员权限运行</p>
+            </fieldset>
+        </li>
+        <li>
+            <fieldset class="layui-elem-field layui-field-title">
+                <legend>其他事项</legend>
+                <p>通用软件包安装后请打开驱动人生安装驱动，之后才能正常使用电脑</p>
+                <p>软件安装过程中遇到任何问题，请联系R333技术支持部</p>
+                <p>网络管理员 郑柯 2021619997@qq.com</p>
+            </fieldset>
+        </li>
+    </ul>
+</div>
+<script src="source/jquery-3.2.1.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".download").click(function(){
+            $(this).attr({"href":"E:\\software\\setup.exe","download":true});
+        });
+    });
+</script>
+</body>
+</html>
